@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question</title>
+        <script>
+            function checkAnswer(){
+                var answer = document.getElementById("answer").value.toLowerCase()
+                var correctAnswer = "javascript"
+
+                if (answer === correctAnswer)
+                    document.getElementById("result").innerHTML = "Correct!"
+                else
+                    document.getElementById("result").innerHTML = "Wrong, try again"
+            }
+        </script>
+</head>
+<body>
+    <h1>Question</h1>
+    <p>What programming language are we learing right now?</p>
+    <input type="text", id="answer", placeholder="Type your answer here">
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="result"></p>
+</body>
