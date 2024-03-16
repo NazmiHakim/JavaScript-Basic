@@ -1,8 +1,9 @@
 <head>
     <Body>
         <script>
-            document.writeln(100,\"<br>"\)
-            document.writeln(100.123,\"<br>"\)
+            document.writeln(100,"<br>")
+            document.writeln(100.123,"<br>")
+            document.writeln(0b1111010) //This will print 122 because JavaScript supports binary, hexadecimal, and octal
         </script>
     </Body>
 </head>
