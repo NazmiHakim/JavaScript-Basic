@@ -1,8 +1,8 @@
 <head>
     <Body>
         <script>
-            document.writeln(100,"<br>")
-            document.writeln(100.123)
+            document.writeln(100,\"<br>"\)
+            document.writeln(100.123,\"<br>"\)
         </script>
     </Body>
 </head>
