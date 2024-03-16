@@ -20,7 +20,3 @@ To use this quiz:
 ## Contributing
 
 Contributions to improve or expand this simple quiz are welcome! If you have ideas for enhancements, bug fixes, or additional features, feel free to fork this repository, make your changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
