@@ -1,0 +1,8 @@
+<head>
+    <Body>
+        <script>
+            document.writeln(true ,"<br>") //true (1)
+            document.writeln(false) //false (0)
+        </script>
+    </Body>
+</head>
