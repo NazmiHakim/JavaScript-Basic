@@ -1,0 +1,8 @@
+<head>
+    <Body>
+        <script>
+            document.writeln(100,"<br>")
+            document.writeln(100.123)
+        </script>
+    </Body>
+</head>
