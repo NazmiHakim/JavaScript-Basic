@@ -4,8 +4,8 @@ This repository contains examples demonstrating the usage of variables in JavaSc
 
 ## File Structure
 
-- **index.html**: This file contains examples demonstrating the usage of `var` variables.
-- **index2.html**: This file contains examples demonstrating the usage of `let` and `const` variables.
+- **Var.html**: This file contains examples demonstrating the usage of `var` variables.
+- **LetConst.html**: This file contains examples demonstrating the usage of `let` and `const` variables.
 
 ## Usage
 
