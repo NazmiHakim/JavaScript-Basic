@@ -11,13 +11,13 @@ This repository contains examples demonstrating the usage of variables in JavaSc
 
 ### `var` Variables (index.html)
 
-The `index.html` file demonstrates the usage of `var` variables. In JavaScript, you can declare variables using the `var` keyword. Variables declared with `var` have function scope, meaning they are accessible within the function in which they are declared.
+The `Var.html` file demonstrates the usage of `var` variables. In JavaScript, you can declare variables using the `var` keyword. Variables declared with `var` have function scope, meaning they are accessible within the function in which they are declared.
 
 The example code in this file shows how to declare and use `var` variables for storing and accessing information such as full name, first name, and last name. It also illustrates how you can update the values of `var` variables.
 
 ### `let` and `const` Variables (index2.html)
 
-The `index2.html` file demonstrates the usage of `let` and `const` variables. 
+The `LetConst.html` file demonstrates the usage of `let` and `const` variables. 
 
 - **`let` Variables**: Variables declared with `let` have block scope, meaning they are accessible only within the block in which they are declared. The example code showcases the usage of `let` to declare variables for storing a numerical value (NIM) and a string (Name).
 
