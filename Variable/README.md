@@ -26,7 +26,7 @@ The `LetConst.html` file demonstrates the usage of `let` and `const` variables.
 ## Instructions
 
 1. Clone this repository to your local machine.
-2. Open `index.html` and `index2.html` in a web browser to view the examples.
+2. Open `Var.html` and `LetConst.html` in a web browser to view the examples.
 3. Examine the source code in the HTML files to understand how variables are declared and used in JavaScript.
 
 Feel free to experiment with the code and make changes to understand the behavior of variables in JavaScript.
