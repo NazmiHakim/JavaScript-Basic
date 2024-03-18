@@ -2,22 +2,6 @@
 
 This is a simple JavaScript example demonstrating the usage of logical operators: AND (`&&`), OR (`||`), and NOT (`!`).
 
-## Usage
-
-1. Clone this repository:
-
-    ```
-    git clone https://github.com/your_username/logical-operators-example.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```
-    cd logical-operators-example
-    ```
-
-3. Open the `index.html` file in a web browser.
-
 ## Description
 
 The `index.html` file contains JavaScript code embedded within the `<script>` tags. Here's a brief overview of what each section does:
