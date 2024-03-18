@@ -4,8 +4,6 @@ This is a simple JavaScript example demonstrating the usage of logical operators
 
 ## Description
 
-The `index.html` file contains JavaScript code embedded within the `<script>` tags. Here's a brief overview of what each section does:
-
 1. **Logical AND (`&&`)**:
    - Declares two variables `x` and `y`.
    - Checks if both `x` and `y` are positive numbers using the logical AND operator.
