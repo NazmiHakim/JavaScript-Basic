@@ -1,0 +1,31 @@
+<head>
+    <body>
+        <script>
+            //string template
+            const name = "Nazmi Hakim"
+            const firstName = "Nazmi"
+            const lastName = "Hakim"
+            const value = 80
+            const template = `Name : ${name} <br> ${firstName} ${lastName} <br>`
+
+            //picking the variable
+            console.info(template)
+            document.writeln(template)
+
+            //expression in string template
+            const template2 = `Name : ${name} <br> Pass : ${value > 75} <br>`
+            document.writeln(template2)
+            
+            //multiline string
+            let multilinestring = `Name : Nazmi Hakim
+NIM : 2310817210012 
+Gender : Male 
+Height : 182cm 
+Weight : 66kg
+`
+            document.writeln("<pre>")
+            document.writeln(multilinestring)
+            document.writeln("<pre>")
+        </script>
+    </body>
+</head>
