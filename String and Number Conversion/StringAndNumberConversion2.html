@@ -1,0 +1,42 @@
+<head>
+    <body>
+        <script>
+            //problem that will happen if doestn convert data type
+            const value1 = "1" //pretend this is an user input
+            const value2 = 1 //pretend this is an user input
+            const sum = value1 + value2 //this will print 11
+            document.writeln(sum + "<br>")
+
+            //conversions :
+            //parseInt(string) = string to number(interger)
+            //parseFloat(string) = string to number(float)
+            //Number(string) = string to number (interger or float)
+            //number.toString() = number to string
+
+            //parseInt(string) = string to number(interger)
+            const value3 = parseInt("2")
+            const value4 = 2
+            const sum2 = value3 + value4 //this will print 4
+            document.writeln(sum2 + "<br>")
+
+            //parseFloat(string) = string to number(float)
+            const value5 = 2.1
+            const value6 = parseFloat("2.1")
+            const sum3 = value5 + value6 //this will print 4.2
+            document.writeln(sum3 + "<br>")
+
+            //Number(string) = string to number (interger or float)
+            const value7 = Number("2")
+            const value8 = Number("2.5")
+            const sum4 = value7 + value8 //this will print 4.5
+            document.writeln(sum4 + "<br>")
+
+            //toString() = number to string
+            const value9 = 2 .toString()
+            const value10 = 3 .toString()
+            const sum5 = value9 + value10 //this will print 23
+            document.writeln(sum5 + "<br>")
+
+        </script>
+    </body>
+</head>
