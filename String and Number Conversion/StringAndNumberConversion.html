@@ -1,0 +1,66 @@
+<head>
+    <body>
+        <script>
+            //problem that will happen if doestn convert data type
+            const value1 = "1" //pretend this is an user input
+            const value2 = 1 //pretend this is an user input
+            const sum = value1 + value2 //this will print 11
+            document.writeln(sum + "<br>")
+
+            //conversions :
+            //parseInt(string) = string to number(interger)
+            //parseFloat(string) = string to number(float)
+            //Number(string) = string to number (interger or float)
+            //number.toString() = number to string
+
+            //parseInt(string) = string to number(interger)
+            const value3 = "2"
+            const value4 = 2
+            const sum2 = parseInt(value3) + value4 //this will print 4
+            document.writeln(sum2 + "<br>")
+
+            //parseFloat(string) = string to number(float)
+            const value5 = 2.1
+            const value6 = "2.1"
+            const sum3 = value5 + parseFloat(value6) //this will print 4.2
+            document.writeln(sum3 + "<br>")
+
+            //Number(string) = string to number (interger or float)
+            const value7 = ("2")
+            const value8 = ("2.5")
+            const sum4 = Number(value7) + Number(value8) //this will print 4.5
+            document.writeln(sum4 + "<br>")
+
+            //toString() = number to string
+            const value9 = 2
+            const value10 = 3
+            const sum5 = value9.toString() + value10.toString() //this will print 23
+            document.writeln(sum5 + "<br>")
+
+            document.writeln(`${parseInt("2")} <br>`)
+            document.writeln(`${parseFloat("2.5")} <br>`)
+            document.writeln(`${Number("2")} <br>`)
+            document.writeln(`${Number("2.5")} <br>`)
+            Number1 = 2
+            Number2 = 3
+            document.writeln(`${Number1.toString()}` + `${Number2.toString()}<br>`)
+
+            //NaN (Not a Number)
+            document.writeln(`${parseInt("wrong")} <br>`) //NaN
+            document.writeln(`${parseFloat("2.5text")} <br>`) //2.5
+
+            document.writeln(`${Number("2.5ups")} <br>`) //NaN
+            document.writeln(`${Number("2.5x")} <br>`) //NaN
+            document.writeln(`${Number("not a number")} <br>`) //NaN
+
+            const value11 = 2.1
+            const value12 = "wrong"
+            const sum6 = value11 + parseInt(value12) //NaN
+            document.writeln(sum6 + "<br>")
+
+            document.writeln(isNaN(sum6) + "<br>")//true
+            document.writeln(isNaN(value11))//false
+
+        </script>
+    </body>
+</head>
