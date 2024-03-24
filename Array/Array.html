@@ -1,0 +1,41 @@
+<head>
+    <body>
+        <script>
+            //Array examples
+            let emptyArray = []
+            let nameArray = ["Nazmi", "Hakim"]
+
+            //Adding data to array
+            let numbers = []
+            numbers.push(1, 8)
+            numbers.push(2, 3, 4)
+            numbers.push(5, 9)
+            numbers.push(6, 7)
+
+            document.writeln(numbers + "<br>") //1,8,2,3,4,5,9,6,7
+            console.table(numbers)
+
+            //Operations in array:
+            //array.push(value) = adding data to array
+            //array.length = get array length
+            //array[index] = get data in array index position
+            //array[index] = value == changing data in array index position
+            //delete array[index] = deleting data in array index position but index is not moved
+
+            let names = ["Nazmi Hakim"]
+            names.push("Teramoz")
+            document.writeln(names + "<br>") //Nazmi Hakim,Teramoz
+
+            document.writeln(names.length + "<br>") //2
+
+            document.writeln(names[1] + "<br>") //Teramoz
+
+            names[1] = "Gatsu"
+            document.writeln(names + "<br>") //Nazmi Hakim,Gatsu
+
+            delete names[1]
+            document.writeln(names)//Nazmi Hakim,
+
+        </script>
+    </body>
+</head>
