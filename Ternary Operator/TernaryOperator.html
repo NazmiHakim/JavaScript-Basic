@@ -1,0 +1,27 @@
+<head>
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <script>
+        let value = prompt("Input your value");
+        let say;
+
+        if (value == 100) {
+            say = "Perfect!";
+        }
+        else if (value >= 75) {
+            say = "Good!";
+        }
+        else if (value >= 50) {
+            say = "Meh";
+        }
+        else if (value >= 25) {
+            say = "Try Again";
+        }
+        else {
+            say = "You Failed";
+        }
+
+        document.writeln(say);
+    </script>
+</body>
