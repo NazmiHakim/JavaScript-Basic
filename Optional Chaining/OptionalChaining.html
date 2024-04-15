@@ -1,0 +1,32 @@
+<head>
+    <title>Optional Chaining</title>
+</head>
+<body>
+    <script>
+        // Define a person object with an address property
+        const person = {
+            address: {
+                country: "Indonesia"
+            }
+        }
+    
+        // Optional Chaining Example:
+    
+        // Optional chaining allows accessing nested properties without causing errors if any intermediate property is null or undefined
+        // Syntax: object?.property
+    
+        // Without optional chaining:
+        // let country = person.address.country
+        // This may seem fine but could throw an error if 'address' or 'country' is null or undefined
+    
+        // With optional chaining:
+        let country = person?.address?.country
+        // This syntax ensures that if 'address' or 'country' is null or undefined, 'country' will be assigned undefined without throwing an error
+    
+        // Output the country value
+        document.writeln(`<p>${country}<p>`)
+    
+        // This line won't be affected by the optional chaining and will still be executed
+        document.writeln("TEST")
+    </script>
+</body>
