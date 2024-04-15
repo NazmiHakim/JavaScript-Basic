@@ -1,0 +1,40 @@
+<head>
+    <title>Falsy and Truthy</title>
+</head>
+<body>
+    <script>
+        //automaticly convert datatypes
+
+        //Falsy Data :
+        //false = false boolean
+        //0, -0 = Number 0 and -0 count as false
+        //"",'',`` = all empty string count as false
+        //null = null count as false
+        //undefined = undefined count as false
+        //NaN = Not a Number dianggap false
+
+        //Truthy Data :
+        //true = true boolean
+        //0, -0 = Number 0 and -0 count as true
+        //"",'',`` = all empty string count as true
+        //null = null count as true
+        //undefined = undefined count as true
+        //NaN = Not a Number dianggap true
+
+        //Falsy and Truthy
+
+        let data;
+        if (data){
+            document.writeln("TRUE")}
+        else {
+            document.writeln("FALSE")
+        }
+
+        let data2 = "FALSE" //This will still print TRUE to the screen because the variable data2 is assigned a non-empty string value, which is considered truthy in JavaScript
+        if (data2){
+            document.writeln("TRUE")}
+        else {
+            document.writeln("FALSE")
+        }
+    </script>
+</body>
