@@ -1,0 +1,40 @@
+<head>
+    <title>Logic Operator In Non Boolean</title>
+</head>
+<body>
+    <script>
+
+        //OR (||) Operator in Non Boolean
+        //This operator takes the first truthy value
+        //If none is truthy, then the program will take last value
+        //EX:
+
+        console.info("Hello"||"") //Hello
+        console.info(""||[]) //[]
+        console.info("0"||"ZERO") //0
+        console.info(0||"ZERO") //ZERO
+        console.info(null||"NULL") //NULL
+        console.info(undefined||"UNDEFINED") //UNDEFINED
+
+        const person = {
+            firstName : "",
+            lastName : "Hakim" 
+        }
+        
+        const name = person.firstName || person.lastName
+        console.info(name)
+
+        //AND (&&) Operator in Non Boolean
+        //This operator takes the first falsy value
+        //If none is falsy, then the program will take last value
+        //EX:
+
+        console.info("Hello" && "") //""
+        console.info("" && []) //""
+        console.info("0" && "ZERO") //ZERO
+        console.info(0 && "ZERO") //0
+        console.info(null && "NULL") //null
+        console.info(undefined && "UNDEFINED") //undefined
+        console.info("undefined" && "null") //null
+    </script>
+</body>
