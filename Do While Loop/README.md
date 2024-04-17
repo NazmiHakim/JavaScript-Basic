@@ -38,4 +38,3 @@ do {
 ## Conclusion
 
 This example illustrates the basic syntax and behavior of a do-while loop in JavaScript. It is useful when you want to execute a block of code at least once, regardless of whether the condition is initially true or not, and then continue executing it as long as the condition remains true.
-```
