@@ -1,0 +1,25 @@
+<head>
+    <title>Break & Continue</title>
+</head>
+<body>
+    <script>
+        //break
+        let counter = 1
+        while (true) {
+            document.writeln(`<p>${counter}</p`)
+            counter++
+        
+        if (counter > 10) {
+            break
+        }
+    }
+
+        //continue
+        for(let i = 1; i <=100; i++){
+            if (i % 2 === 0){ //even number
+                continue
+            }
+         document.writeln(`<p>${i}</p>`)
+        }
+    </script>
+</body>
