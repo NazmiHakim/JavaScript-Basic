@@ -1,15 +1,25 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <body>
-    <script>
-            
-        const enter = confirm("Do you want to enter?");
-    if (enter) {
-        const name = prompt("Who is your name?");
-        alert(`Hello ${name}`);
-    } else {
-        alert("Bye bye");
-        };
-
-    </script>
-    </body>
+    <title>Enter Confirmation</title>
 </head>
+<body>
+    <script>
+        const enter = confirm("Do you want to enter?");
+        if (enter) {
+            let name;
+            while (true) {
+                name = prompt("What is your name?");
+                if (name !== null && name.trim() !== "") {
+                    alert(`Hello ${name}`);
+                    break;
+                } else {
+                    alert("Please input your name");
+                }
+            }
+        } else {
+            alert("Bye bye");
+        }
+    </script>
+</body>
+</html>
