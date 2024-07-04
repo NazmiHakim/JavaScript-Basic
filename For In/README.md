@@ -1,5 +1,3 @@
-Certainly! Here is a `README.md` file that explains the provided HTML and JavaScript code:
-
 ```markdown
 # JavaScript Object Properties Example
 
@@ -66,10 +64,3 @@ Property lastName : Gatsu
 ```
 
 This output shows each property of the `person` object and its value.
-
-## License
-
-This project is licensed under the MIT License.
-```
-
-Feel free to adjust or add more details as needed for your project!
