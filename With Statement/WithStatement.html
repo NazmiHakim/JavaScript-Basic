@@ -1,0 +1,23 @@
+<head>
+    <title>With Statement</title>
+</head>
+<script>
+    //Without "With Statement"
+    const person = {
+        firstName : "Hakim",
+        midName : "Teramoz",
+        lastName : "Gatsu"
+    }
+
+    console.log(person.firstName);
+    console.log(person.midName);
+    console.log(person.lastName);
+
+    //With "With Statement"
+
+    with (person) {
+        console.log(firstName);
+    console.log(midName);
+    console.log(lastName);
+    }
+</script>
