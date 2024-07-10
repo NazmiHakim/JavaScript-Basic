@@ -1,0 +1,16 @@
+<head>
+    <title>Optional Parameter</title>
+</head>
+<script>
+    function Hello (firstName, midName, lastName){
+        console.log(firstName)
+        console.log(midName)
+        console.log(lastName)
+    }
+
+    Hello("Nazmi");
+    //The midName and lastName will shown as "undefined" in the console
+    Hello("Nazmi","Hakim","Gatsu");
+    Hello("Nazmi","Hakim","Gatsu","Teramoz");
+    //Teramoz will not be shown
+</script>
