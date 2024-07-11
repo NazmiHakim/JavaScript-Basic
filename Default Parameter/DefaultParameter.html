@@ -1,0 +1,14 @@
+<head>
+    <title>Default Parameter</title>
+</head>
+<script>
+function register(name, gender = "UNKNOWN")//= "UNKNOWN" is the default parameter
+{
+    document.writeln(name, " ", gender, "<br>")
+}
+
+register("Nazmi", "Male");
+register("Teramoz");
+register("Gatsu", undefined);
+register("Gatsu", null);
+</script>
