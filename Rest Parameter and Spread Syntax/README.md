@@ -43,12 +43,6 @@ sum("Test", ...value2);
 </html>
 ```
 
-## How to Run
-
-1. Save the above code in an HTML file, for example, `index.html`.
-2. Open the `index.html` file in a web browser.
-3. The results of the sum calculations will be displayed on the webpage.
-
 ## Explanation
 
 - **Rest Parameter**: The `sum` function uses the rest parameter (`...data`) to accept an indefinite number of arguments as an array. This allows the function to handle any number of numeric inputs and sum them up.
