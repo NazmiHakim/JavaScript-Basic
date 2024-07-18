@@ -1,0 +1,13 @@
+<head>
+<title>Function As Value</title>
+</head>
+<script>
+function sayHello(name){
+    document.writeln(`Hello ${name} <br>`)
+}
+
+let say = sayHello;
+
+sayHello("Nazmi");
+say("Hakim");
+</script>
