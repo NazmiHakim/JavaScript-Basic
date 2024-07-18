@@ -48,4 +48,3 @@ say("Hakim");
 - `say("Hakim");`: Calls the `sayHello` function through the variable `say` with the argument "Hakim".
 
 This example demonstrates that in JavaScript, functions can be assigned to variables and can be called using these variables, providing flexibility in how functions are used.
-```
