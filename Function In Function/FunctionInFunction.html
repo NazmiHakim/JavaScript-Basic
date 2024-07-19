@@ -1,0 +1,17 @@
+<head>
+<title>Function In Function</title>
+</head>
+<script>
+function outer(){
+console.info("Outer")
+    function inner(){
+    console.info("Inner")
+    }
+
+    inner();
+    inner();
+}
+
+outer();
+inner() //ERROR
+</script>
