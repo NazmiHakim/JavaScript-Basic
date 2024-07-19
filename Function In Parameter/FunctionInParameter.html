@@ -1,0 +1,20 @@
+<head>
+<title>Function In Parameter</title>
+</head>
+<script>
+function sayHello(name){
+    document.writeln(`<p>Hello ${name}</p>`)
+}
+
+sayHello("Nazmi")
+
+const say = sayHello;
+
+say("Hakim");
+
+function giveMeName(callback){
+    callback("Teramoz")
+}
+
+giveMeName(sayHello);
+</script>
