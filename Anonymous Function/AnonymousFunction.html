@@ -1,0 +1,21 @@
+<head>
+<title>Anonymous Function In Variable & Parameter </title>
+</head>
+<script>
+    let say = function (name){
+        document.writeln(`Hello ${name}<br>`)
+    };
+
+    say("Nazmi");
+
+    function giveMeName(callback){
+        callback("Hakim")
+    }
+
+    giveMeName(say);
+
+    giveMeName(function(name){
+        document.writeln(`<p>Hi ${name}</p>`);
+    });
+
+</script>
