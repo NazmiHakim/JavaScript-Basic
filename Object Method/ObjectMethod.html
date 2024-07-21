@@ -1,0 +1,26 @@
+<head>
+    <title></title>
+    </head>
+    <body>
+    <script>
+    // Making Object with Method
+    const person = {
+        name: "Nazmi",
+        sayHello: function (name) {
+            alert(`Hello ${name}, from ${this.name}`);
+        }
+    }
+    
+    // Existing method usage
+    person.sayHello("Hakim");
+    
+    // Adding a new method to the object
+    person.sayGoodbye = function(name) {
+        alert(`Goodbye ${name}, from ${this.name}`);
+    }
+    
+    // Using the new method
+    person.sayGoodbye("Hakim");
+    </script>
+    </body>
+    
