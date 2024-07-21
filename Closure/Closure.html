@@ -1,0 +1,19 @@
+<head>
+<title></title>
+</head>
+<body>
+<script>
+function createAdder(value){
+    const owner = "Eko";
+    function add(param){
+        document.writeln(owner);
+        return value + param
+    }
+    return add
+}  
+
+const addTwo = createAdder(2);
+document.writeln(addTwo(10));
+document.writeln(addTwo(20));
+</script>
+</body>
