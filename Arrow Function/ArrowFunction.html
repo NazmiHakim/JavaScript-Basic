@@ -1,0 +1,35 @@
+<head>
+<title>Arrow Function</title>
+</head>
+<body>
+<script>
+    //Arrow Function
+    //Arrow Function With Block
+    const hello  = (name) => {
+        const say = `Hello ${name} <br>`
+        document.writeln(say)
+    }
+
+    hello("Nazmi");
+    hello("Hakim");
+
+    //Arrow Function Without Block
+    const sayHello = (name2) => document.writeln(`Hello ${name2} <br>`)
+    sayHello("Teramoz");
+
+    //Arrow Function Return Value
+    const sum = (first, second) => first + second
+    document.writeln(sum(1,4),"<br>")
+
+    //Arrow Function without ()/Parameter Shell
+    const sayHello2 = name3 => document.writeln(`Hello ${name3} <br>`);
+    sayHello2("Gatsu");
+
+    //Arrow Function As Parameter
+    function giveMeName(callback){
+        callback("Nadea")
+    }
+
+    giveMeName((name4) => document.writeln(`Hello ${name4}`)); 
+</script>
+</body>
