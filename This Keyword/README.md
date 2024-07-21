@@ -56,7 +56,3 @@ person.sayHello("Teramoz");
 ```
 
 Within the `sayHello` method of the `person` object, `this` refers to the `person` object itself. This allows access to the object's properties, such as `name`.
-
-## License
-
-This project is open source and available under the MIT License.
