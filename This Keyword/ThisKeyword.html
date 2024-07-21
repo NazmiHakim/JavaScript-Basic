@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Log This</title>
+</head>
+<body>
+    <script>
+        // This in Global Scope
+        console.info(this);
+
+        function sample() {
+            console.info(this);
+
+            function sample2() {
+                console.info(this);
+            }
+
+            sample2();
+        }
+
+        sample();
+
+        //This in Object Method
+        const person = {
+            name : "Hakim",
+            sayHello : function (name) {
+                //this = person
+                document.write(`Hi ${name}, my name is ${this.name}`)
+            }
+        }
+
+        person.sayHello("Teramoz");
+    </script>
+</body>
+</html>
