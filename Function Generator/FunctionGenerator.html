@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Generator</title>
+</head>
+<body>
+<script>
+// Basic Function Generator
+function* createNames(){
+    yield "Nazmi<br>";
+    yield "Hakim<br>";
+    yield "Teramoz<br>";
+}
+
+const names = createNames();
+for (const name of names){
+    document.writeln(name);
+}
+
+// Complex Function Generator
+function* ganjil(value){
+    for (let i = 1; i <= value; i++){
+        if (i % 2 === 1){
+            yield i;
+        }
+    }
+}
+
+const angkaGanjil = ganjil(100);
+for (const angka of angkaGanjil){
+    document.writeln(angka, "<br>");
+}
+
+// Lazy Generator
+function* buatGanjil(value){
+    for (let i = 1; i <= value; i++){
+        if (i % 2 === 1) {
+            document.writeln(`Loop ${i}<br>`);
+            yield i;
+        }
+    }
+}
+
+const angkaGanjil1 = buatGanjil(100);
+document.writeln(angkaGanjil1.next().value + "<br>");
+document.writeln(angkaGanjil1.next().value + "<br>");
+document.writeln(angkaGanjil1.next().value + "<br>");
+</script>
+</body>
+</html>
