@@ -1,0 +1,24 @@
+<head>
+<title>Getter and Setter</title>
+</head>
+<body>
+<script>
+//Getter
+const person = {
+    firstName : "Nazmi",
+    lastName : "Hakim",
+    get fullName(){
+        return `${this.firstName} ${this.lastName} <br>`;
+    },
+//Setter
+    set fullName(value){
+        document.writeln(`Change Full Name ${value} <br>`)
+    }
+}
+
+person.fullName = "Gatsu Berserk";
+
+person.firstName = "Teramoz";
+document.writeln(person.fullName);
+</script>
+</body>
