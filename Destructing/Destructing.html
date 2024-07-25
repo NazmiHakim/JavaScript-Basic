@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destructuring</title>
+</head>
+<body>
+<script>
+    // Fetching Data by Manual
+    const names = ["Nazmi", "Hakim", "Teramoz"];
+    const firstName = names[0];
+    const middleName = names[1];
+    const lastName = names[2];
+
+    console.info(firstName);  
+    console.info(middleName); 
+    console.info(lastName);   
+
+    // Destructuring Array
+    const names2 = ["Gatsu", "Galuh", "Terra", "Nazmi", "Hakim"];
+    const [firstName2, middleName2, lastName2, ...others] = names2;
+
+    console.info(firstName2);  
+    console.info(middleName2); 
+    console.info(lastName2);   
+    console.info(others);      
+
+    // Fetching Data in Object
+    const person = {
+        firstName3: "Nazmi",
+        lastName3: "Hakim",
+        address: {
+            street: "Jl. Manarap",
+            city: "Banjarmasin",
+            country: "Indonesia",
+        },
+        hobby: "Game",
+        age: "19"
+    };
+
+{
+    // Destructuring Objects
+    let { firstName3, lastName3, address, ...others2 } = person;
+
+    console.info(firstName3);  
+    console.info(lastName3);  
+    console.info(address);     
+    console.info(others2);     
+}
+
+{
+    // Destructuring Nested Object
+    const {firstName3, lastName3, address: {country, city, street}, ...others2} = person;
+    console.info(firstName3);
+    console.info(lastName3);
+    console.info(country);
+    console.info(city);
+    console.info(street);
+    console.info(others2);
+}
+
+{
+    //Destructuring in Function Parameter (1)
+    function displayPerson({firstName, middleName, lastName}){
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+    }
+
+    const person = {
+        firstName : "Nazmi",
+        middleName : "Teramoz",
+        lastName : "Gatsu"
+    }
+    displayPerson(person)
+}
+
+{
+    //Destrunturing in Function Parameter (2)
+    function sum([first, second]){
+        return first + second;
+    }
+
+    console.info(sum([10, 10]))
+    console.info(sum([20, 10]))
+}
+
+{
+    //Default Value Destructuring Array
+    const names = ["Nazmi", 'Teramoz']
+    const [firstName, middleName, lastName = "Gatsu"] = names;
+
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+}
+
+{
+    //Default Value Destructuring Object
+    const person = {
+        firstName : "Nazmi",
+        lastName : "Gatsu"
+    }
+
+    const {firstName, middleName = "Teramoz", lastName} = person;
+    console.info(firstName)
+    console.info(middleName)
+    console.info(lastName)
+
+    //Using Other Varable Name
+    const {
+        firstName: frontName,
+        middleName: midName = "Teramoz",
+        lastName: backName} = person;
+
+    console.info(frontName)
+    console.info(midName)
+    console.info(backName)
+    }
+</script>
+</body>
+</html>
