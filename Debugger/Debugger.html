@@ -1,0 +1,14 @@
+<head>
+<title>Debugger</title>
+</head>
+<body>
+<script>
+function createFullName(firstName, middleName, lastName){
+    debugger;
+    const fullName = `${firstName} ${lastName} ${lastName}`;//purposely set the middlename to lastname to debug it
+    return fullName;
+}
+
+createFullName("Nazmi", "Teramoz", "Hakim");
+</script>
+</body>
