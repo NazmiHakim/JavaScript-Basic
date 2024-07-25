@@ -1,0 +1,18 @@
+<head>
+<title></title>
+</head>
+<body>
+<script>
+//Strict Mode
+function useStrictMode() {
+    'use strict';
+    const person = {
+        firstName : "Nazmi"
+    }
+    with (person) { //"with is not allowed in strict mode"
+        console.info(firstName);
+    }
+}
+
+</script>
+</body>
